@@ -20,6 +20,8 @@
 #   # Specifying both a custom namespace and remote port
 #   kpf my-other-service 9090 my-other-namespace 8080
 
+alias kapow="kubectl get pods -A -o wide"
+
 kpf() {
   # Check for the two required arguments.
   if [ "$#" -lt 2 ]; then
