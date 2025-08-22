@@ -21,6 +21,9 @@
 #   kpf my-other-service 9090 my-other-namespace 8080
 
 alias kapow="kubectl get pods -A -o wide"
+alias klogs="kubectl logs -f"
+alias kgp="kubectl get pods"
+alias kdp="kubectl describe pod"
 
 kpf() {
   # Check for the two required arguments.
